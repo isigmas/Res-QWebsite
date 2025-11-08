@@ -24,11 +24,11 @@ export default function HowItWorksSection() {
   }, [])
 
   return (
-    <section className="py-20 px-6 bg-slate-950">
+    <section className="py-20 px-6 bg-gradient-to-b from-orange-50 to-orange-100">
       <div className="max-w-6xl mx-auto">
         <div className="mb-16 text-center">
-          <h2 className="text-5xl font-bold text-white mb-4">How It Works</h2>
-          <p className="text-xl text-slate-300">Triple-constellation satellite precision</p>
+          <h2 className="text-5xl font-bold text-slate-700 mb-4">How It Works</h2>
+          <p className="text-xl text-slate-700">Triple-constellation satellite precision</p>
         </div>
 
         <div ref={containerRef} className="space-y-8">
@@ -61,17 +61,17 @@ export default function HowItWorksSection() {
             <div
               key={item.step}
               data-animate
-              className="opacity-0 translate-y-4 transition-all duration-500 flex gap-6 items-start p-6 rounded-lg border border-slate-700 bg-slate-800/50 hover:bg-slate-800 hover:border-red-500/50"
+              className="opacity-0 translate-y-4 transition-all duration-500 flex gap-6 items-start p-6 rounded-lg border border-slate-400 bg-slate-200 hover:bg-slate-400 hover:border-blue-500/50"
             >
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-red-500/20 border border-red-500 flex items-center justify-center text-2xl">
+              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 border border-blue-500 flex items-center justify-center text-2xl">
                 {item.icon}
               </div>
               <div>
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-red-500 font-bold text-lg">Step {item.step}</span>
-                  <h3 className="text-xl font-bold text-white">{item.title}</h3>
+                  <span className="text-blue-500 font-bold text-lg">Step {item.step}</span>
+                  <h3 className="text-xl font-bold text-slate-700">{item.title}</h3>
                 </div>
-                <p className="text-slate-300">{item.description}</p>
+                <p className="text-slate-700">{item.description}</p>
               </div>
             </div>
           ))}
