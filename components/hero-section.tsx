@@ -112,10 +112,9 @@ export default function HeroSection({ scrollY }: HeroSectionProps) {
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-red-500/30 bg-red-500/5">
-          <div className="w-2 h-2 rounded-full bg-red-500" />
-          <span className="text-sm font-medium text-red-500">Precision Navigation</span>
-        </div>
+        
+          <span className="-translate-y-3 text-9xl font-medium text-red-500">Res-Q</span>
+      
 
         <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">Precision When It Matters Most</h1>
 

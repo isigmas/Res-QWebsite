@@ -2,7 +2,7 @@ export default function FeaturesSection() {
   const features = [
     {
       title: "Meter-Level Accuracy",
-      description: "Precision to within 1 meter, even in challenging conditions",
+      description: "Precision to within 5 meter, even in challenging conditions",
       icon: "📍",
     },
     {
