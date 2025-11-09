@@ -11,15 +11,12 @@ export default function VideoSection() {
           </p>
         </div>
 
-        <div className="relative aspect-video max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl">
-          <iframe
-            className="w-full h-full"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Res-Q Mountain Rescue Technology Demo"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
+        <div className="relative aspect-video max-w-4xl mx-auto flex items-center justify-center">
+          <img
+            className="h-full object-cover"
+            src="/screens.png"
+            alt="Res-Q Mountain Rescue Technology Demo"
+          />
         </div>
 
         <div className="text-center mt-8">

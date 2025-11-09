@@ -25,8 +25,8 @@ export default function HomeContent() {
   return (
     <main className="overflow-hidden bg-background">
       <HeroSection scrollY={scrollY} />
-              <div className="border-t border-slate-400" />
-      <VideoSection/>
+      {/*}        <div className="border-t border-slate-400" />
+      <VideoSection/>*/}
               <div className="border-t border-slate-400" />
       <ProblemSection />
               <div className="border-t border-slate-400" />
