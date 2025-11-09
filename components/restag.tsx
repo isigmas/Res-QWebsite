@@ -57,7 +57,7 @@ export default function ResTagSection() {
             {keyPoints.map((point, index) => (
               <div
                 key={index}
-                className="group p-6 rounded-lg border border-slate-400 bg-slate-200 hover:border-blue-500/50 hover:bg-slate-300 hover:shadow-lg transition-all duration-300"
+                className="group p-6 rounded-lg border border-slate-400 bg-slate-200 hover:border-blue-500/50 hover:bg-slate-300 hover:shadow-lg transition-all hover:shadow-blue-500/50 duration-300"
               >
                 <h4 className="text-lg font-bold text-slate-700 mb-2 flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-blue-500 rounded-full group-hover:scale-150 transition-transform" />

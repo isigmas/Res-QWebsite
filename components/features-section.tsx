@@ -44,7 +44,7 @@ export default function FeaturesSection() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group p-8 rounded-xl border border-slate-400 bg-slate-200 hover:bg-slate-300 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10"
+              className="group p-8 rounded-xl border border-slate-400 bg-slate-200 hover:bg-slate-300 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50"
             >
               <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
                 {feature.icon}
