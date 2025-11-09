@@ -56,8 +56,10 @@ export default function HeroSection({ scrollY }: HeroSectionProps) {
       }
     }
 
-    // Initialize particles
-    for (let i = 0; i < 50; i++) {
+    // Initialize particles - fewer on mobile for better performance
+    const isMobile = window.innerWidth < 768
+    const particleCount = isMobile ? 25 : 50
+    for (let i = 0; i < particleCount; i++) {
       particles.push(new Particle())
     }
 
@@ -78,6 +80,14 @@ export default function HeroSection({ scrollY }: HeroSectionProps) {
     const handleResize = () => {
       canvas.width = window.innerWidth
       canvas.height = window.innerHeight
+      
+      // Reinitialize particles with appropriate count for new screen size
+      particles.length = 0
+      const isMobile = window.innerWidth < 768
+      const particleCount = isMobile ? 25 : 50
+      for (let i = 0; i < particleCount; i++) {
+        particles.push(new Particle())
+      }
     }
 
     window.addEventListener("resize", handleResize)
@@ -100,25 +110,27 @@ export default function HeroSection({ scrollY }: HeroSectionProps) {
         }}
       />
 
-      {/* Parallax circles */}
+      {/* Parallax circles - adjusted for mobile */}
       <div
-        className="absolute top-20 right-10 w-64 h-64 rounded-full border border-blue-500/20"
+        className="absolute top-20 right-4 sm:right-10 w-32 h-32 sm:w-64 sm:h-64 rounded-full border border-blue-500/20"
         style={{ transform: `translateY(${scrollY * 0.5}px)` }}
       />
       <div
-        className="absolute bottom-32 left-20 w-48 h-48 rounded-full border border-blue-500/20"
+        className="absolute bottom-32 left-4 sm:left-20 w-24 h-24 sm:w-48 sm:h-48 rounded-full border border-blue-500/20"
         style={{ transform: `translateY(${scrollY * 0.3}px)` }}
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
         
-          <span className="-translate-y-3 text-9xl font-medium text-blue-500">Res-Q</span>
+          <span className="block text-6xl sm:text-8xl md:text-9xl font-medium text-blue-500 mb-4">Res-Q</span>
       
 
-        <h1 className="text-6xl md:text-7xl font-bold text-slate-700 mb-6 leading-tight">Precision When It Matters Most</h1>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-slate-700 mb-4 sm:mb-6 leading-tight px-2">
+          Precision When It Matters Most
+        </h1>
 
-        <p className="text-xl md:text-2xl text-slate-500 mb-12 max-w-3xl mx-auto">
+        <p className="text-lg sm:text-xl md:text-2xl text-slate-500 mb-8 sm:mb-12 max-w-3xl mx-auto px-2">
           Res-Q guides mountain rescuers with meter-level accuracy using European space technologies—cutting through
           fog, darkness, and terrain.
         </p>
