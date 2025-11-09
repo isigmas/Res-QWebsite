@@ -118,19 +118,19 @@ export default function HeroSection({ scrollY }: HeroSectionProps) {
 
         <h1 className="text-6xl md:text-7xl font-bold text-slate-700 mb-6 leading-tight">Precision When It Matters Most</h1>
 
-        <p className="text-xl md:text-2xl text-slate-700 mb-12 max-w-3xl mx-auto">
+        <p className="text-xl md:text-2xl text-slate-500 mb-12 max-w-3xl mx-auto">
           Res-Q guides mountain rescuers with meter-level accuracy using European space technologies—cutting through
           fog, darkness, and terrain.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        {/*<div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="px-8 py-4 bg-blue-500 text-slate-900 font-semibold rounded-lg hover:bg-blue-500 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50">
             Join the Mission
           </button>
           <button className="px-8 py-4 border border-size-md border-slate-600 text-slate-900 font-semibold rounded-lg hover:bg-slate-600/50 transition-all duration-300">
             Learn More
           </button>
-        </div>
+        </div>*/}
       </div>
 
       {/* Scroll indicator */}

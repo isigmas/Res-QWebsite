@@ -24,7 +24,7 @@ export default function ResTagSection() {
         <div className="mb-16 text-center">
           <h2 className="text-5xl font-bold text-slate-700 mb-4">Res-Tag</h2>
           <p className="text-2xl text-blue-500 font-semibold mb-6">Your Pocket-Sized Lifeline</p>
-          <p className="text-xl text-slate-700 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed">
             When you're off-grid and need help, Res-Tag delivers what matters most: your precise location to rescue
             services. Compact, straightforward, and essential—designed for one purpose: keeping you safe.
           </p>
@@ -37,14 +37,10 @@ export default function ResTagSection() {
               {/* Glow effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-blue-500/20 rounded-3xl blur-3xl" />
 
-              {/* Obrazek urządzenia */}
-              {/* Pamiętaj, aby podmienić 'Gemini_Generated_Image_hsoiqghsoiqghsoi.jpg' 
-                  na właściwą ścieżkę w Twoim projekcie, np. '/images/res-tag-device.jpg' 
-              */}
               <img
-                src="/Gemini_Generated_Image_hsoiqghsoiqghsoi.png" // <-- ZMIEŃ TĘ ŚCIEŻKĘ
+                src="/Gemini_Generated_Image_hsoiqghsoiqghsoi.png" 
                 alt="Res-Tag Emergency Locator Device"
-                className="relative z-10 rounded-2xl border border-blue-500/30 shadow-2xl shadow-black/30"
+                className="relative z-10 rounded-2xl border border-blue-500/30 shadow-3xl shadow-black/30"
               />
               
             </div>
@@ -57,7 +53,7 @@ export default function ResTagSection() {
             {keyPoints.map((point, index) => (
               <div
                 key={index}
-                className="group p-6 rounded-lg border border-slate-400 bg-slate-400/30 hover:border-blue-500/50 hover:bg-slate-400/50 transition-all duration-300"
+                className="group p-6 rounded-lg border border-slate-400 bg-slate-200 hover:border-blue-500/50 hover:bg-slate-300 hover:shadow-lg transition-all hover:shadow-blue-500/50 duration-300"
               >
                 <h4 className="text-lg font-bold text-slate-700 mb-2 flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-blue-500 rounded-full group-hover:scale-150 transition-transform" />
@@ -88,7 +84,7 @@ export default function ResTagSection() {
 
                 {index < 3 && (
                   <div className="hidden md:block absolute top-6 left-1/2 w-full -z-10">
-                    <svg className="w-full h-1 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 100 1">
+                    <svg className="w-full h-1 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 100 1">
                       <path strokeDasharray="4 4" d="M0 0.5 L100 0.5" />
                     </svg>
                   </div>

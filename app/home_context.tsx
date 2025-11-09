@@ -6,9 +6,9 @@ import ProblemSection from "@/components/problem-section"
 import HowItWorksSection from "@/components/how-it-works-section"
 import FeaturesSection from "@/components/features-section"
 import ImpactSection from "@/components/impact-section"
-import GalileoVsGpsSection from "@/components/tableComparasion"
 import ResTagHeroSection from "@/components/restag"
 import FooterSection from "@/components/footer"
+import VideoSection from "@/components/videoSection"
 
 export default function HomeContent() {
   const [scrollY, setScrollY] = useState(0)
@@ -25,6 +25,8 @@ export default function HomeContent() {
   return (
     <main className="overflow-hidden bg-background">
       <HeroSection scrollY={scrollY} />
+      {/*}        <div className="border-t border-slate-400" />
+      <VideoSection/>*/}
               <div className="border-t border-slate-400" />
       <ProblemSection />
               <div className="border-t border-slate-400" />

@@ -28,7 +28,7 @@ export default function HowItWorksSection() {
       <div className="max-w-6xl mx-auto">
         <div className="mb-16 text-center">
           <h2 className="text-5xl font-bold text-slate-700 mb-4">How It Works</h2>
-          <p className="text-xl text-slate-700">Triple-constellation satellite precision</p>
+          <p className="text-xl text-slate-500">Triple-constellation satellite precision</p>
         </div>
 
         <div ref={containerRef} className="space-y-8">
@@ -61,7 +61,7 @@ export default function HowItWorksSection() {
             <div
               key={item.step}
               data-animate
-              className="opacity-0 translate-y-4 transition-all duration-500 flex gap-6 items-start p-6 rounded-lg border border-slate-400 bg-slate-200 hover:bg-slate-400 hover:border-blue-500/50"
+              className="opacity-0 translate-y-4 transition-all duration-500 flex gap-6 items-start p-6 rounded-lg border border-slate-400 bg-slate-200 hover:bg-slate-300 duration-300 hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/50"
             >
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 border border-blue-500 flex items-center justify-center text-2xl">
                 {item.icon}

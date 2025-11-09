@@ -16,7 +16,7 @@ export default function ImpactSection() {
             { stat: "5m", label: "Res-Q precision" },
             { stat: "75%", label: "Improvement in target finding" },
           ].map((item, index) => (
-            <div key={index} className="p-6 rounded-lg bg-slate-200 border border-slate-400  transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50">
+            <div key={index} className="p-6 rounded-lg bg-slate-200 border border-slate-400 hover:bg-slate-300 duration-300 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50">
               <div className="text-4xl font-bold text-blue-500 mb-2">{item.stat}</div>
               <p className="text-slate-700">{item.label}</p>
             </div>

@@ -9,8 +9,8 @@ export default function ProblemSection() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Standard GPS */}
-          <div className="relative overflow-hidden rounded-xl bg-slate-200 border border-slate-400 p-8">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-red-500/10 rounded-full blur-3xl" />
+          <div className="relative overflow-hidden rounded-xl bg-slate-200 border border-slate-400 p-8 hover:bg-slate-300 hover:shadow-md hover:shadow-red-500/50 duration-300">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl" />
             <div className="relative z-10">
               <h3 className="text-2xl font-bold text-slate-700 mb-2">Standard GPS</h3>
               <p className="text-6xl font-bold text-blue-500 mb-4">±20m</p>
@@ -30,8 +30,8 @@ export default function ProblemSection() {
           </div>
 
           {/* Res-Q */}
-          <div className="relative overflow-hidden rounded-xl bg-slate-200 border border-slate-400 p-8">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-slate-500/10 rounded-full blur-3xl" />
+          <div className="relative overflow-hidden rounded-xl bg-slate-200 border border-slate-400 p-8 hover:bg-slate-300 hover:shadow-md hover:shadow-blue-500/50 duration-300">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl" />
             <div className="relative z-10">
               <h3 className="text-2xl font-bold text-slate-700 mb-2">Res-Q</h3>
               <p className="text-6xl font-bold text-blue-500 mb-4">±5m</p>
